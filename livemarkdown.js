@@ -1,13 +1,12 @@
 /**
  * LiveMarkDown - a javascript real time parser for Markdown
  *
+ * Use the markdown parser written by Christopher Jeffrey  (MIT Licensed)
+ * https://github.com/chjj/marked
+ * 
  * Copyright (c) 2013, Thomas Genin. (MIT Licensed)
  */
 ;(function() {
-    /**
-     * marked - A markdown parser (https://github.com/chjj/marked)
-     * Copyright (c) 2011-2012, Christopher Jeffrey. (MIT Licensed)
-     */
     var _markdownParser  = function _getMarkDownParser(){
         /**
          * Block-Level Grammar
