@@ -844,12 +844,20 @@
                 throw Error( "LiveMarkDown need a target element" );
             }
 
-            // Init the element
+            // Init the source element
             if( srcElementID !== null ){
                 srcElement = document.getElementById( srcElementID );
             }
+            if( srcElement === null ){
+                throw Error( "LiveMarkDown source Element is null" );
+            }
+
+            // Init the target element
             if( targetElementID !== null ){
                 targetElement = document.getElementById( targetElementID );
+            }
+            if( targetElement === null ){
+                throw Error( "LiveMarkDown target Element is null" );   
             }
 
             var lastRun = +new Date();
